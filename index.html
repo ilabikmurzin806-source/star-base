@@ -166,4 +166,5 @@ function observe(){let io=new IntersectionObserver(es=>es.forEach(e=>e.isInterse
 function toggleMobileMenu(){const n=document.getElementById('mainNav');if(!n)return;const open=n.classList.toggle('mobileOpen');document.body.classList.toggle('mobileMenuOpen',open);document.querySelector('.mobileMenuBtn')?.setAttribute('aria-expanded',open?'true':'false')}
 function closeMobileMenu(){document.getElementById('mainNav')?.classList.remove('mobileOpen');document.body.classList.remove('mobileMenuOpen');document.querySelector('.mobileMenuBtn')?.setAttribute('aria-expanded','false')}
 document.addEventListener('click',e=>{if(e.target.closest('#mainNav a'))closeMobileMenu()});
-</script></body></html>
+</script><!-- mobile-deploy-trigger-20260922 -->
+</body></html>
