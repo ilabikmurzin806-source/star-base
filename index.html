@@ -531,9 +531,14 @@ async function loadSiteContent(){
   bg('.ep1',v.story_image_1); bg('.ep2',v.story_image_2);
   bg('.vrStage',v.music_image); bg('.vrCreator',v.blogger_image); bg('.vrFashion',v.community_image);
   const setCat=(sel,url)=>document.querySelectorAll(sel).forEach(el=>url&&el.style.setProperty('--cms-bg','url("'+String(url).replace(/"/g,'%22')+'")'));
-  setCat('.catMusic,.catStage,.catCasting,.catEvents,.catProduce',v.music_image);
-  setCat('.catBloggers,.catMedia,.catPr,.catCreative,.catDance',v.blogger_image);
-  setCat('.catModels,.catModel,.catActors,.catBrands',v.community_image);
+  setCat('.catMusic,.catStage,.catCasting,.catProduce',v.music_image);
+  setCat('.catBloggers,.catMedia,.catPr',v.blogger_image);
+  setCat('.catModels,.catModel',v.models_image||v.community_image);
+  setCat('.catActors',v.actors_image||v.community_image);
+  setCat('.catDance',v.dance_image||v.blogger_image);
+  setCat('.catCreative',v.creative_image||v.blogger_image);
+  setCat('.catEvents',v.events_image||v.music_image);
+  setCat('.catBrands',v.community_image);
  }catch(e){console.warn('STAR BASE content settings unavailable',e)}
 }
 loadSiteContent();
