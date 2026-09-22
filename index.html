@@ -63,6 +63,20 @@ body{background:radial-gradient(circle at 82% 8%,#33165c 0,transparent 25%),radi
 #catalog .accessDemo{display:none}#catalog .plansDemo{display:none}
 .panel>.wrap.section>.eyebrow+ h2{margin-top:12px}
 @media(max-width:700px){.newsCard{min-height:340px!important;border-radius:24px}.newsCard h3{font-size:27px}#catalog .toolbar{width:100%;border-radius:20px;overflow-x:auto;display:flex;flex-wrap:nowrap}#catalog .toolbar .btn{width:auto!important;white-space:nowrap}.opp{padding:22px!important}.opp b{font-size:20px!important}}
+</style><style>
+/* STAR BASE social / participant visual pass */
+#feed{background:radial-gradient(circle at 50% 8%,#31134d 0,transparent 25%),#050713}
+#feed .section{max-width:1080px}#feed .section>h2{text-align:center;margin-left:auto;margin-right:auto}#feed .section>.eyebrow{text-align:center}
+.feedTabs{justify-content:center;margin:24px auto 18px;padding:5px;width:max-content;border:1px solid #ffffff16;border-radius:999px;background:#ffffff08}.feedTabs .btn{min-width:145px;box-shadow:none}
+.feedStories{max-width:760px;margin:auto}.feedAvatar{box-shadow:0 0 0 2px #050713,0 0 0 3px #ff4fa055}
+.socialFeed{max-width:720px}.socialPost{border-radius:28px;background:linear-gradient(180deg,#141728,#0d0f1c);border:1px solid #ffffff16;box-shadow:0 22px 70px #0005}.socialHead{padding:17px 19px}.socialMedia{background:#090b13}.socialActions{border-top:1px solid #ffffff0c;padding:14px 19px 6px}.socialBody{padding:0 19px 19px}.socialActionBtn{transition:.18s}.socialActionBtn:hover{transform:scale(1.12)}
+#talentViewContent>.card{border-radius:34px!important;padding:38px!important;background:radial-gradient(circle at 88% 8%,#8b5cff38,transparent 27%),linear-gradient(145deg,#15182c,#0d0f1b)!important;border:1px solid #ffffff18!important;box-shadow:0 30px 90px #0006}
+#talentViewContent h2{font-size:clamp(48px,7vw,78px)!important;line-height:.9!important;letter-spacing:-4px!important;margin:16px 0!important}
+#talentViewContent .pill{background:linear-gradient(90deg,#ff3f91,#8b5cff);color:#fff}
+#talentViewContent .socialPost{max-width:680px;margin-left:auto;margin-right:auto}
+#publicTalents{gap:18px}#publicTalents .talent{height:390px;border-radius:28px;background:radial-gradient(circle at 65% 20%,#ff3f9155,transparent 25%),radial-gradient(circle at 20% 70%,#5068ff55,transparent 28%),linear-gradient(145deg,#15192e,#30152d)}#publicTalents .talent b{font-size:24px}#publicTalents .talent p{color:#d1d3dd;font-size:13px}
+#publicTalents .talent .btn{margin-top:10px;padding:10px 14px;font-size:11px}
+@media(max-width:700px){#feed .section>h2{text-align:left}#feed .section>.eyebrow{text-align:left}.feedTabs{width:100%;border-radius:18px}.feedTabs .btn{min-width:0}.socialPost{border-radius:0}.socialHead{padding:13px 14px}.socialBody{padding:0 14px 16px}#talentViewContent>.card{padding:24px 18px!important;border-radius:25px!important}#talentViewContent h2{font-size:48px!important}.talent{min-width:78vw!important}}
 </style></head><body>
 <header class="nav"><div class="wrap navin"><a class="logo" onclick="show('home')" href="#">ST<i>★</i>R BASE<span class="by">ПРОЕКТ ОТ «ЗВЁЗДНОГО ФЕСТА»</span></a><nav class="links"><a href="#" onclick="show('home');setTimeout(()=>document.getElementById('about').scrollIntoView(),50)">О проекте</a><a href="#" onclick="show('feed');loadFeed()">Лента</a><a href="#" onclick="show('news')">Новости</a><a href="#" onclick="show('talents')">Участники</a><a href="#" onclick="show('catalog')">Возможности</a><a href="#" onclick="show('cabinet')">Кабинет</a><a href="#" onclick="show('contacts')">Контакты</a><a class="btn outline" href="#" onclick="show('cabinet');setTimeout(()=>document.getElementById('authEmail')?.focus(),50)">Войти</a><a class="btn" href="#" onclick="show('cabinet');setTimeout(()=>document.getElementById('authEmail')?.focus(),50)">Регистрация</a><button class="mobileRefresh" type="button" onclick="refreshStarBase()" aria-label="Обновить STAR BASE">↻</button></nav></div></header>
 <a id="adminReturn" class="adminReturn" href="/admin/">★ Вернуться в админку</a><main>
