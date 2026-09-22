@@ -89,6 +89,14 @@ body{background:radial-gradient(circle at 82% 8%,#33165c 0,transparent 25%),radi
 #cabinet .cards>.card{position:relative;overflow:hidden;min-height:145px;background:linear-gradient(145deg,#171a2e,#10121f);border:1px solid #ffffff18;transition:.22s}#cabinet .cards>.card:after{content:"↗";position:absolute;right:18px;top:16px;color:#ffffff55;font-size:20px}#cabinet .cards>.card:hover{transform:translateY(-4px);border-color:#ffffff38}#cabinet .cards>.card h2{font-size:44px;margin:18px 0 0}
 #cabinetUser>.card{border-radius:26px;background:linear-gradient(145deg,#131626,#0d0f1a);border-color:#ffffff15}#feedComposer{background:#090b16!important;border:1px solid #ffffff12!important}#feedComposer textarea,#feedComposer input{width:100%;padding:15px;border-radius:14px;border:1px solid #ffffff16;background:#111422;color:#fff}
 @media(max-width:700px){#profile .form{grid-template-columns:1fr}#profile .form>*{grid-column:1!important}#profile .form>.card{padding:19px}#authBox{padding:24px 18px!important;margin-top:25px!important}#cabinetUser>h2{font-size:48px;letter-spacing:-3px}#cabinet .cards>.card{min-height:105px}}
+</style><style>
+/* Final UI polish */
+::selection{background:#ff4f9f;color:#fff}body{-webkit-font-smoothing:antialiased}.muted{color:#989eb1}.card{border:1px solid #ffffff14}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #ff67ad;outline-offset:3px}
+.btn:active{transform:translateY(0) scale(.98)}.back{border-color:#ffffff20!important}
+.newsEmpty{background:#ffffff05;border-style:dashed;text-align:center}
+footer{background:#04050d}
+@media(max-width:700px){body{overflow-x:hidden}.panel{min-height:calc(100vh - 72px)}.section h2{overflow-wrap:anywhere}.btn{touch-action:manipulation}.newsEmpty{padding:26px 18px}.homeTalentLead{padding:26px 22px}}
 </style></head><body>
 <header class="nav"><div class="wrap navin"><a class="logo" onclick="show('home')" href="#">ST<i>★</i>R BASE<span class="by">ПРОЕКТ ОТ «ЗВЁЗДНОГО ФЕСТА»</span></a><nav class="links"><a href="#" onclick="show('home');setTimeout(()=>document.getElementById('about').scrollIntoView(),50)">О проекте</a><a href="#" onclick="show('feed');loadFeed()">Лента</a><a href="#" onclick="show('news')">Новости</a><a href="#" onclick="show('talents')">Участники</a><a href="#" onclick="show('catalog')">Возможности</a><a href="#" onclick="show('cabinet')">Кабинет</a><a href="#" onclick="show('contacts')">Контакты</a><a class="btn outline" href="#" onclick="show('cabinet');setTimeout(()=>document.getElementById('authEmail')?.focus(),50)">Войти</a><a class="btn" href="#" onclick="show('cabinet');setTimeout(()=>document.getElementById('authEmail')?.focus(),50)">Регистрация</a><button class="mobileRefresh" type="button" onclick="refreshStarBase()" aria-label="Обновить STAR BASE">↻</button></nav></div></header>
 <a id="adminReturn" class="adminReturn" href="/admin/">★ Вернуться в админку</a><main>
